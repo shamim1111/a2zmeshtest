@@ -1,22 +1,220 @@
-<html>
- <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - A2ZMesh.Ai</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "A2Z Mesh.AI",
-      "url": "https://a2zmeshai.com",
-      "logo": "https:/a2zmeshai.com/logo.png",
-      "description": "AI-powered end to end mesh provider."
+  <!-- Primary SEO -->
+  <title>A2Z mesh.ai — End-to-End Mesh AI Platform | Scalable, Secure, Real-Time</title>
+  <meta name="description" content="A2Z mesh.ai delivers end-to-end mesh AI solutions for enterprises: scalable, secure, real-time inference, MLOps, and edge-to-cloud orchestration. Learn more." />
+  <meta name="keywords" content="A2Z mesh.ai, mesh AI, end-to-end AI platform, edge AI, distributed AI, MLOps, real-time inference, scalable AI mesh, enterprise AI mesh" />
+  <link rel="canonical" href="https://www.a2zmesh.ai/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="A2Z mesh.ai" />
+  <meta property="og:title" content="A2Z mesh.ai — End-to-End Mesh AI Platform" />
+  <meta property="og:description" content="Delivering scalable, secure, end-to-end mesh AI: edge-to-cloud orchestration, real-time inference, MLOps and enterprise-grade networking." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://a2zmeshai.com/" />
+  <meta property="og:image" content="https://www.a2zmesh.ai/assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A2Z mesh.ai — End-to-End Mesh AI Platform" />
+  <meta name="twitter:description" content="Scalable, secure mesh AI platform for real-time inference, MLOps and edge-to-cloud orchestration." />
+  <meta name="twitter:image" content="https://www.a2zmesh.ai/assets/twitter-image.png" />
+
+  <!-- Structured Data: Organization, WebSite, FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.a2zmesh.ai/#org",
+        "name": "A2Z mesh.ai",
+        "url": "https://a2zmeshai.com/",
+        "logo": "https://www.a2zmesh.ai/assets/logo.png",
+        "sameAs": [
+          "https://twitter.com/a2zmeshai",
+          "https://www.linkedin.com/company/a2z-mesh-ai"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://a2zmeshai.com/#website",
+        "url": "https://www.a2zmesh.ai/",
+        "name": "A2Z mesh.ai",
+        "publisher": {
+          "@id": "https://a2zmeshai.com/#org"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://a2zmeshai.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is A2Z mesh.ai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A2Z mesh.ai is an end-to-end mesh AI platform that unifies edge, on-prem, and cloud resources to enable scalable, secure, real-time AI inference and MLOps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does A2Z mesh.ai support edge devices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — A2Z mesh.ai supports a wide range of edge devices and provides orchestration, model deployment, and secure connectivity from edge to cloud."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What industries benefit from A2Z mesh.ai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Industries including manufacturing, healthcare, logistics, autonomous systems, smart cities, and telecommunication benefit from our mesh AI solutions."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Performance & index control -->
+  <meta name="robots" content="index, follow" />
+  <link rel="prefetch" href="/assets/hero-bg.jpg" />
+  <style>
+    /* Minimal, inlined CSS for example page rendering and accessibility */
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; line-height:1.6; color:#111; margin:0; padding:0; }
+    .container { max-width:1100px; margin:0 auto; padding:24px; }
+    header { padding:24px 0; border-bottom:1px solid #eee; }
+    h1{ font-size:2rem; margin:0 0 12px; }
+    h2{ font-size:1.25rem; margin:20px 0 8px; }
+    p{ margin:0 0 12px; }
+    .cta { display:inline-block; background:#0b63ff; color:#fff; padding:12px 18px; text-decoration:none; border-radius:6px; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:12px; }
+    .feature { border:1px solid #f0f0f0; padding:12px; border-radius:8px; background:#fafafa; }
+    footer { border-top:1px solid #eee; margin-top:24px; padding:18px 0; font-size:0.9rem; color:#555; }
+    @media (prefers-color-scheme:dark) {
+      body{ background:#0b0b0c; color:#ddd; }
+      header, footer{ border-color:#222; }
+      .feature{ background:#0f0f10; border-color:#1a1a1b; }
     }
-    </script>
+  </style>
 </head>
+<body>
+  <header class="container" role="banner">
+    <img src="/assets/logo.png" alt="A2Z mesh.ai logo" width="180" height="48" />
+    <nav aria-label="Main navigation">
+      <a href="#solutions">Solutions</a> |
+      <a href="#features">Features</a> |
+      <a href="#use-cases">Use cases</a> |
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
 
-  <body>
-    <h4>Coming soon</h4>
-  </body>
+  <main class="container" role="main">
+    <section aria-labelledby="hero">
+      <h1 id="hero">A2Z mesh.ai — End-to-end Mesh AI for Enterprise</h1>
+      <p><strong>Build, deploy, and manage distributed AI at scale.</strong> A2Z mesh.ai is a comprehensive mesh AI platform that combines secure networking, real-time inference, MLOps, and edge-to-cloud orchestration to power modern AI applications.</p>
+      <p>
+        <a class="cta" href="/contact">Request a demo</a>
+        <a style="margin-left:12px;" href="/docs" rel="noopener">Explore docs</a>
+      </p>
+    </section>
+
+    <section id="solutions" aria-labelledby="solutions-heading">
+      <h2 id="solutions-heading">End-to-End Mesh AI Solutions</h2>
+      <p>Our platform supports the entire AI lifecycle — from data ingestion and model training to deployment, continuous monitoring, and governance across edge, on-prem, and cloud environments.</p>
+
+      <div class="features" aria-hidden="false">
+        <article class="feature" aria-labelledby="f1">
+          <h3 id="f1">Scalable Mesh Orchestration</h3>
+          <p>Automatically discover and orchestrate compute across distributed nodes to scale inference and training workloads with low-latency routing.</p>
+        </article>
+
+        <article class="feature" aria-labelledby="f2">
+          <h3 id="f2">Real-Time Inference</h3>
+          <p>Deliver sub-second inference with optimized pipelines and model routing for latency-sensitive AI applications.</p>
+        </article>
+
+        <article class="feature" aria-labelledby="f3">
+          <h3 id="f3">Secure Connectivity</h3>
+          <p>End-to-end encryption, zero-trust access controls, and compliance-ready logging ensure enterprise-grade security across the mesh.</p>
+        </article>
+
+        <article class="feature" aria-labelledby="f4">
+          <h3 id="f4">MLOps & CI/CD for Models</h3>
+          <p>Automate model lifecycle: training triggers, versioned rollout, A/B testing, rollback, and observability for model health.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Platform Highlights</h2>
+      <ul>
+        <li><strong>Edge-to-cloud orchestration:</strong> Unified control plane for hybrid deployments.</li>
+        <li><strong>Policy-driven governance:</strong> Automated policies for privacy, compliance, and cost control.</li>
+        <li><strong>Autoscaling & load balancing:</strong> Dynamic resource allocation across mesh nodes.</li>
+        <li><strong>Telemetry & observability:</strong> Integrated logging, metrics, and model drift detection.</li>
+      </ul>
+      <p>SEO tip: For better discoverability, ensure each feature page includes detailed case studies, customer testimonials, and technical whitepapers that use targeted long-tail keywords such as "edge AI orchestration for manufacturing" or "real-time mesh inference for autonomous systems".</p>
+    </section>
+
+    <section id="use-cases" aria-labelledby="usecases-heading">
+      <h2 id="usecases-heading">Use Cases</h2>
+      <p>Common ways customers use A2Z mesh.ai:</p>
+      <ul>
+        <li>Smart manufacturing: predictive maintenance using local inference and federated learning.</li>
+        <li>Telecom: distributed inference across base stations for latency-critical services.</li>
+        <li>Healthcare: secure, audited model deployments for diagnostic imaging.</li>
+        <li>Logistics & supply chain: real-time routing and anomaly detection at the edge.</li>
+      </ul>
+    </section>
+
+    <section id="cta" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Get Started with A2Z mesh.ai</h2>
+      <p>Schedule a demo, run a proof-of-concept, or download our technical whitepaper. Our team helps you design secure, resilient mesh AI systems tailored to your environment.</p>
+      <p><a class="cta" href="/contact">Schedule a demo</a></p>
+    </section>
+
+    <section id="seo-guidance" aria-labelledby="seo-guidance-heading">
+      <h2 id="seo-guidance-heading">SEO & Content Strategy (for webmasters)</h2>
+      <p>Content recommendations to improve ranking for "mesh AI" and related queries:</p>
+      <ol>
+        <li>Create detailed product pages per capability (Orchestration, MLOps, Edge Inference) with 800–1500+ words and keyword variations.</li>
+        <li>Publish technical whitepapers and case studies with schema markup and downloadable assets.</li>
+        <li>Use long-tail keywords: "deploying mesh AI for manufacturing", "secure edge AI orchestration", "A2Z mesh.ai tutorial".</li>
+        <li>Optimize images (descriptive filenames & alt text), implement internal linking, and use logical URL slugs like /solutions/edge-inference.</li>
+      </ol>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <dl>
+        <dt>How quickly can I deploy A2Z mesh.ai?</dt>
+        <dd>Deployment timelines vary by environment. Small POCs can be deployed in days; enterprise rollouts typically follow a phased 6–12 week plan including integration and validation.</dd>
+
+        <dt>Which cloud providers are supported?</dt>
+        <dd>We support major cloud providers (AWS, Azure, GCP) as well as private on-prem and hybrid environments.</dd>
+
+        <dt>Is A2Z mesh.ai compliant with industry regulations?</dt>
+        <dd>Yes — our platform supports audit logging, role-based access control, and data governance features designed to help meet HIPAA, SOC2, and GDPR requirements.</dd>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <p>© <time datetime="2025">2025</time> A2Z mesh.ai. <a href="/privacy">Privacy</a> • <a href="/terms">Terms</a></p>
+    <p>Contact: <a href="mailto:info@a2zmeshai.com">info@a2zmeshai.com</a> • Phone: </p>
+  </footer>
+</body>
 </html>
