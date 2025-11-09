@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://a2zmeshai.com/</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Solutions section -->
+  <url>
+    <loc>https://a2zmeshai.com/#solutions</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Features section -->
+  <url>
+    <loc>https://a2zmeshai.com/#features</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Use Cases section -->
+  <url>
+    <loc>https://a2zmeshai.com/#use-cases</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- FAQ section -->
+  <url>
+    <loc>https://a2zmeshai.com/#faq</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>
